@@ -1,0 +1,76 @@
+{
+  "mappings": {
+    "properties": {
+      "title": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },  
+      "display_name": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      }, 
+      "pub_title": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } } 
+      }, 
+      "date_text": { "type": "keyword" },
+      "date": { "type": "date" },
+      "pub_date_text": { "type": "keyword" },
+      "pub_date": { "type": "date" },
+      "date_or_pub_date": { "type": "date"},
+      "creator": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },
+      "pub_author": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },
+      "pub_type": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },
+      "pub_location": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },
+      "description": { "type": "text" },
+      "scale": { "type": "integer" },
+      "width_cm": { "type": "float"},
+      "height_cm": { "type": "float"},
+      "area_cm2": { "type": "float" },
+      "world_area": { 
+        "type": "keyword",
+        "fields": { "keyword": { "type": "keyword" } } 
+      },
+      "region": { 
+        "type": "keyword",
+        "fields": { "keyword": { "type": "keyword" } } 
+      },
+      "country": { 
+        "type": "keyword",
+        "fields": { "keyword": { "type": "keyword" } } 
+      },
+      "state_province": { 
+        "type": "keyword",
+        "fields": { "keyword": { "type": "keyword" } } 
+      },
+      "county": { 
+        "type": "keyword",
+        "fields": { "keyword": { "type": "keyword" } } 
+      },
+      "related_place": { 
+        "type": "keyword",
+        "fields": { "keyword": { "type": "keyword" } } 
+      },
+      "external_id": { "type": "keyword" },
+      "list_no": { "type": "keyword" },
+      "image_manifest": { "type": "keyword" },
+      "presentation_manifest": { "type": "keyword" },
+      "web_url": { "type": "keyword" },
+      "mapkurator_filename": { "type": "keyword" },
+      "num_labels": { "type": "integer" },
+      "map_text": { "type": "text" }
+    }
+  }
+}

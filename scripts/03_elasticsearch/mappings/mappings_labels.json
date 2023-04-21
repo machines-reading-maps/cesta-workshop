@@ -1,0 +1,59 @@
+{
+  "mappings": {
+    "properties": {
+      "title": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },  
+      "display_name": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      }, 
+      "pub_title": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } } 
+      }, 
+      "date_text": { "type": "keyword" },
+      "date": { "type": "date" },
+      "pub_date_text": { "type": "keyword" },
+      "pub_date": { "type": "date" },
+      "date_or_pub_date": { "type": "date"},
+      "creator": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },
+      "pub_author": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },
+      "pub_type": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },
+      "pub_location": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },
+      "scale": { "type": "integer" },
+      "related_place": { 
+        "type": "keyword",
+        "fields": { "keyword": { "type": "keyword" } } 
+      },
+      "list_no": { "type": "keyword" },
+      "area_cm2": { "type": "float" },
+      "text": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },
+      "postocr_label": { 
+        "type": "text",
+        "fields": { "keyword": { "type": "keyword" } }
+      },
+      "score": { "type": "float" },
+      "external_id": { "type": "keyword" },
+      "web_url": { "type": "keyword" },
+      "mapkurator_filename": { "type": "keyword" },
+      "geometry": { "type": "geo_shape" }
+    }
+  }
+}
